@@ -1,0 +1,70 @@
+/**
+ * Basic typography style for copy text
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body {
+  color: $text-color;
+  font: 400 160% / 3rem $text-font-stack;
+}
+
+h1, h2 {
+  font-size: 200%;
+  color: $title-color;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 3.2rem;
+  margin-bottom: 5rem;
+  @include respond(big-tablets) {
+    margin-bottom: 1rem;
+  }
+}
+
+h2 {
+  font-size: 162.5%;
+  margin-bottom: 1.5rem;
+}
+
+//h3 use for card in business expertise
+h3 {
+  font-size: 237.5%;
+  font-weight: 700;
+  line-height: 4.6rem;
+  color: $white;
+  @include respond(big-tablets) {
+    font-size: 200%;
+  }
+  @include respond(small-tablets) {
+    font-size: 150%;
+  }
+}
+
+//h4 use for card in domain expertise
+h4 {
+  font-size: 162.5%;
+  line-height: 3.2rem;
+  color: $white;
+  font-weight: 800;
+  margin: 5rem 0 1.2rem 8rem;
+  @include respond(big-tablets) {
+    margin: 5rem 0 0 1rem;
+  }
+  @include respond(small-tablets) {
+    font-size: 140%;
+  }
+}
+
+//h5 use for contact form
+h5 {
+  font-size: 118.75%;
+  line-height: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 2.5rem;
+  @include respond(small-tablets) {
+    margin-bottom: 1.5rem;
+  }
+}
+

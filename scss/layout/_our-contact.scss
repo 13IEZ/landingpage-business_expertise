@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the absolute items of the site/application.
+// -----------------------------------------------------------------------------
+
+.our-contact-wrapper {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+  }
+  @include respond(small-phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.our-contact-wrapper__item:first-child {
+  display: flex;
+}
+
+.our-contact__text:link,
+.our-contact__text:visited, {
+  color: $title-color;
+  margin-right: 3rem;
+  padding-left: 2rem;
+  @include respond(small-phone) {
+    color: #fff;
+  }
+}
+
+.rss {
+  background-image: url("../img/rss-ic.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  @include respond(small-phone) {
+    background-position: 50% 50%;
+  }
+}
+
+.insta {
+  background-image: url("../img/hub-ic.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  @include respond(small-phone) {
+    background-position: 50% 50%;
+  }
+}
+
+.linkedin {
+  background-image: url("../img/linkedin-ic.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  @include respond(small-phone) {
+    background-position: 50% 50%;
+  }
+}
+
+.logo-our-contact {
+  @include respond(small-phone) {
+    align-items: center;
+  }
+}

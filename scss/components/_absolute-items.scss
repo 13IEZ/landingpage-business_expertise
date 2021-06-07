@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the absolute items of the site/application.
+// -----------------------------------------------------------------------------
+
+.dividing-line {
+  margin: 3rem 0 5rem 0;
+  display: block;
+  height: 0.1rem;
+  background: #D5DAE6;
+  position: relative;
+  @include respond(small-phone) {
+    margin: 1rem 0;
+  }
+}
+
+.super-man {
+  position: absolute;
+  right: 5%;
+  top: -19.7rem;
+  @include respond(regular-desktop) {
+    display: none;
+  }
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "homework_44",
+  "version": "1.0.0",
+  "description": "Homework attract",
+  "main": "js/index.js",
+  "scripts": {
+    "watch:sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "author": "Igor Zakharov",
+  "license": "ISC"
+}

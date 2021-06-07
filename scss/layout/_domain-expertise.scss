@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the domain-expertise and ok, lets try? of the site/application.
+// -----------------------------------------------------------------------------
+
+//domain-expertise
+.domain-expertise-wrapper {
+  margin-top: 10rem;
+  padding: 0 10rem;
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+}
+
+.domain-expertise__text {
+  margin-bottom: 5rem;
+}
+
+// ok, lets try?
+.ok__title {
+  margin: 10rem 0 1.5rem 0;
+  @include respond(big-tablets) {
+    margin: 3rem 0 1.5rem 1rem;
+  }
+}
+
+.ok__text {
+  margin-bottom: 5rem;
+  @include respond(big-tablets) {
+    margin-bottom: 2rem;
+  }
+}

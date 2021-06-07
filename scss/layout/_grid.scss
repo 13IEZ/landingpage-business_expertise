@@ -1,0 +1,113 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the grid main part of the site/application.
+// -----------------------------------------------------------------------------
+
+//Business expertise part
+.grid__body {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(28.8rem, 56.5rem));
+  grid-auto-rows: minmax(23.8rem, auto);
+  @include respond(big-tablets) {
+    grid-auto-rows: 14.6rem;
+    gap: 2rem;
+  }
+  @include respond(small-tablets) {
+    grid-template-columns: repeat(2, minmax(18.8rem, 56.5rem));
+    gap: 1rem;
+  }
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid__body a:hover,
+.grid__body a:active {
+  text-decoration: none;
+}
+
+.grid__item1 {
+  display: inline-block;
+  background: url("../uploads/card-1.jpg");
+  background-size: cover;
+}
+
+.grid__item2 {
+  display: inline-block;
+  background: url("../uploads/card-4.jpg");
+  background-size: cover;
+}
+
+.grid__item3 {
+  display: inline-block;
+  background: url("../uploads/card-3.jpg");
+  background-size: cover;
+}
+
+.grid__item4 {
+  display: inline-block;
+  background: url("../uploads/card-2.jpg");
+  background-size: cover;
+}
+
+.grid__item-title {
+  margin: 7rem 0 0.8rem 8rem;
+  @include respond(big-tablets) {
+    margin: 3rem 0 0 1rem;
+  }
+}
+
+.grid__item-text {
+  font-size: 162.5%;
+  color: #fff;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin: 0 0 0 8rem;
+  @include respond(big-tablets) {
+    margin: 0 0 0 1rem;
+    font-size: 100%;
+  }
+  @include respond(small-tablets) {
+    font-size: 80%;
+  }
+}
+
+.grid__item__card {
+  width: 100%;
+  height: 100%;
+}
+
+//Domain-expertise part
+
+.domain-expertise-wrapper__grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(28.8rem, 45.5rem));
+  grid-auto-rows: minmax(18.6rem, auto);
+  @include respond(big-tablets) {
+    gap: 2rem;
+  }
+  @include respond(small-tablets) {
+    grid-template-columns: repeat(2, minmax(18.8rem, 45.5rem));
+    gap: 1rem;
+  }
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.domain-expertise-wrapper__grid-item1 {
+  background: url("../uploads/card-5.jpg");
+}
+
+.domain-expertise-wrapper__grid-item2 {
+  background: url("../uploads/card-6.jpg");
+}
+
+.domain-expertise-wrapper__grid-item3 {
+  background: url("../uploads/card-7.jpg");
+}
+
+.domain-expertise-wrapper__grid-item4 {
+  background: url("../uploads/card-8.jpg");
+}

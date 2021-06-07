@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the simply awesome of the site/application.
+// -----------------------------------------------------------------------------
+
+.simply-awesome-wrapper {
+  padding: 0 10rem;
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+  }
+}
+
+.simply-awesome__title {
+  margin-top: 5rem;
+}
+
+.simply-awesome__list {
+  list-style: none;
+}
+
+.simply-awesome-wrapper:last-child {
+  display: flex;
+  justify-content: space-between;
+  @include respond(small-tablets) {
+    flex-direction: column;
+  }
+}
+
+.simply-awesome__rate-ic:first-child {
+  margin-bottom: 5rem;
+  @include respond(small-tablets) {
+    margin: 1rem 0;
+  }
+}

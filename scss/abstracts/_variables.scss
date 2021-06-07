@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Montserrat', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: #6A7798 !default;
+
+// Main brand color
+// @type color
+$brand-color: rgb(153, 153, 153) !default;
+
+/// Main title color
+/// @type Color
+$title-color: #021747 !default;
+
+/// White
+/// @type Color
+$white: #fff !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 126rem !default;
+
+// media size for example
+$small-phone: 48rem;
+$small-tablets: 76.7rem;
+$big-tablets: 102.3rem;
+$regular-desktop: 1440px;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

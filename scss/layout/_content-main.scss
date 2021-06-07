@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main-content of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-content-wrapper__text {
+  padding: 0 10rem;
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+  }
+}
+
+.main-content-wrapper__text-link:first-child:link,
+.main-content-wrapper__text-link:first-child:visited {
+  font-weight: 500;
+  font-size: 87.5%;
+  color: #808BA3;
+  margin-right: 0.5rem;
+}
+
+.main-content-wrapper__text-link:last-child:link,
+.main-content-wrapper__text-link:last-child:visited {
+  font-weight: 600;
+  font-size: 87.5%;
+  color: $title-color;
+  margin-left: 0.5rem;
+}
+
+.main-content-wrapper__text-title {
+  margin-top: 6rem;
+  @include respond(big-tablets) {
+    margin-bottom: 2rem;
+  }
+  @include respond(small-tablets) {
+    margin: 2rem 0;
+  }
+}
+
+.main-content-wrapper__text-paragraph {
+  margin-bottom: 5rem;
+  @include respond(big-tablets) {
+    margin-bottom: 2rem;
+  }
+}

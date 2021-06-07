@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the menu of the site/application.
+// -----------------------------------------------------------------------------
+
+.dividing-menu-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #6F7E9E;
+  height: 100rem;
+  width: 8rem;
+  @include respond(regular-desktop) {
+    width: 4rem;
+  }
+  @include respond(big-tablets) {
+    border: 0;
+    border-bottom: 1px solid #6F7E9E;
+    display: block;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 12%;
+  }
+}
+
+.menu-ic {
+  margin-bottom: 1rem;
+  @include respond(big-tablets) {
+    position: absolute;
+    top: -6rem;
+    right: 6%;
+  }
+  @include respond(small-tablets) {
+    top: -7rem;
+  }
+}
+
+.menu-text {
+  font-size: 162.5%;
+  font-weight: 900;
+  color: #D9DDE7;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  @include respond(big-tablets) {
+    display: none;
+  }
+}

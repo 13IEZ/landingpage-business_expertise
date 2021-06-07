@@ -1,0 +1,131 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the contact form of the site/application.
+// -----------------------------------------------------------------------------
+
+.form {
+  margin: 0 10rem;
+  background-color: $title-color;
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include respond(small-phone) {
+    display: block;
+  }
+}
+
+.form-wrapper {
+  padding: 0 8rem;
+  @include respond(regular-desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  @include respond(big-tablets) {
+    padding: 0 1rem;
+  }
+  @include respond(small-tablets) {
+    padding: 0 0.5rem;
+  }
+}
+
+.form-wrapper:last-child {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 8rem;
+  @include respond(big-tablets) {
+    padding: 2rem 1rem;
+  }
+  @include respond(small-tablets) {
+    padding: 1rem 0.1rem;
+  }
+}
+
+.form__title {
+  padding: 6.5rem 0 3rem 0;
+  @include respond(small-tablets) {
+    padding: 2rem 0 2rem 0;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 1.1rem 0;
+  width: 48.46%;
+  @include respond(regular-desktop) {
+    width: 50%;
+  }
+  @include respond(small-phone) {
+    width: 100%;
+  }
+}
+
+input[type=text] {
+  margin-right: 2rem;
+  @include respond(small-phone) {
+    margin: 0 0 2rem 0;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-size: 87.5%;
+  font-weight: 500;
+  color: #6A7798;
+  opacity: 0.5;
+  padding-left: 1.2rem;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 2rem;
+  height: 6.2rem;
+}
+
+.form-wrapper ul {
+  list-style: none;
+}
+
+.form-wrapper ul li {
+  margin-bottom: 0.5rem;
+}
+
+.checkbox__title {
+  margin-top: 3rem;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label[for=have]::before,
+label[for=need]::before,
+label[for=want]::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 2.4rem;
+  background-image: url("../img/check_box-out.png");
+  vertical-align: -0.5rem;
+}
+
+input[type=checkbox]:checked + label::before {
+  background: url("../img/check_box-in.png");
+  background-size: 24px 24px;
+}
+
+input {
+  font-weight: 700;
+  font-size: 87.5%;
+  color: #fff;
+  padding-left: 1.2rem;
+}
